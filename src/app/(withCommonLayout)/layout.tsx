@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import NavBar from "../components/shared/NavBar";
+import Footer from "../components/shared/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,6 +18,7 @@ export default async function RootLayout({
       <div className="mx-auto container">
         <NavBar />
         {children}
+        <Footer />
       </div>
     </>
   );

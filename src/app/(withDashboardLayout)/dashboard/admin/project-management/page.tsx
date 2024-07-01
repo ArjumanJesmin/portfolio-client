@@ -1,7 +1,9 @@
+import AddProjectForm from "./components/AddProjectForm";
+
 const ProjectManagePage = () => {
   return (
-    <div>
-      <h2>This is Project Manage Page</h2>
+    <div className="my-3 mx-5 p-10">
+      <AddProjectForm />
     </div>
   );
 };

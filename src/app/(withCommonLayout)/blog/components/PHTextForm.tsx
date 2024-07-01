@@ -22,13 +22,16 @@ const PHTextForm = () => {
     };
 
     try {
-      const response = await fetch(`http://localhost:5000/api/v1/blog`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
+      const response = await fetch(
+        ` https://portfolio-server-inky-six.vercel.app/api/v1/blog`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
 
       if (response.ok) {
         toast.success("Blog created successfully");
