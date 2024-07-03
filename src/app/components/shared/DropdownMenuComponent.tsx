@@ -5,13 +5,25 @@ const MenuComponent: React.FC = () => {
   return (
     <NavbarMenu>
       <NavbarMenuItem>
-        <Link className="w-full" color="foreground" href="/features">
-          Features
+        <Link className="w-full" color="foreground" href="/about">
+          About
         </Link>
       </NavbarMenuItem>
       <NavbarMenuItem>
-        <Link className="w-full" color="foreground" href="#">
-          Customers
+        <Link className="w-full" color="foreground" href="/blog">
+          blog
+        </Link>
+      </NavbarMenuItem>
+
+      <NavbarMenuItem>
+        <Link className="w-full" color="foreground" href="/contactUs">
+          Contact Us
+        </Link>
+      </NavbarMenuItem>
+
+      <NavbarMenuItem>
+        <Link className="w-full" color="foreground" href="/MySkills">
+          Skills
         </Link>
       </NavbarMenuItem>
     </NavbarMenu>

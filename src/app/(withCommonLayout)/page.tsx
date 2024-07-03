@@ -1,5 +1,8 @@
 import HeroSection from "../components/homePage/HeroSection";
+
 import Project from "../components/homePage/Project";
+import RecentBlogs from "../components/homePage/RecentBlogs";
+import MySkills from "./MySkills/page";
 import ContactForm from "./contactUs/ContactForm/ContactForm";
 
 const HomePage = () => {
@@ -7,7 +10,9 @@ const HomePage = () => {
     <div>
       <HeroSection />
       <Project />
+      <MySkills />
       <ContactForm />
+      <RecentBlogs />
     </div>
   );
 };

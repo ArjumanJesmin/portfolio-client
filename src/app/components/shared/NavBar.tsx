@@ -19,7 +19,7 @@ import MenuComponent from "./DropdownMenuComponent";
 
 const NavBar: React.FC = () => {
   const router = useRouter();
-  const pathname = usePathname(); // Call usePathname inside the component function
+  const pathname = usePathname();
 
   const isActive = (path: string) => pathname === path;
 
@@ -90,12 +90,12 @@ const NavBar: React.FC = () => {
         <NavbarItem>
           <NextLink
             className={`w-full ${
-              isActive && isActive("/contact")
+              isActive && isActive("/contactUs")
                 ? "text-customPurple underline font-semibold"
                 : "hover:secondary"
             }`}
             color="foreground"
-            href="/contact"
+            href="/contactUs"
           >
             Contact
           </NextLink>
@@ -104,12 +104,12 @@ const NavBar: React.FC = () => {
         <NavbarItem>
           <Link
             className={`w-full ${
-              isActive && isActive("/skills")
+              isActive && isActive("/MySkills")
                 ? "text-customPurple underline font-semibold"
                 : "hover:secondary"
             }`}
             color="foreground"
-            href="/skills"
+            href="/MySkills"
           >
             Skills
           </Link>

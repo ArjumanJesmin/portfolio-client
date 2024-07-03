@@ -1,5 +1,6 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
+/* eslint-disable react/no-unescaped-entities */
+import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import axios from "axios";
 import { toast } from "sonner";
@@ -33,16 +34,21 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="container gap-6 p-8 m-4 grid grid-cols-2 min-h-screen">
-      <div className="p-5 justify-center items-center">
-        <h2 className="text-center text-primary font-semibold text-2xl my-4">
-          Let's Work Together!
-        </h2>
-        <p className="my-4">
-          I design and code beautifully simple and I love what I do. Just simple
-          like this!
-        </p>
-        <form onSubmit={handleSubmit(onSubmit)} className="border p-5">
+    <div className=" mx-auto min-h-screen gap-2 p-4 grid grid-cols-1 md:grid-cols-2 light:bg-secondary">
+      <div className="">
+        <div className="p-2 flex flex-col justify-center items-center">
+          <h2 className="text-center text-primary font-semibold text-3xl my-4">
+            Let's Work Together!
+          </h2>
+          <p className="my-4 text-center">
+            I design and code beautifully simple and I love what I do. Just
+            simple like this!
+          </p>
+        </div>
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="border p-5 w-full md:w-auto shadow-lg"
+        >
           <div className="my-4">
             <label className="my-3" htmlFor="to">
               To:
@@ -85,23 +91,23 @@ const ContactForm: React.FC = () => {
         </form>
       </div>
 
-      <div className="text-center gap-8 justify-center items-center pt-52">
-        <div className="flex justify-start items-center gap-6">
-          <div className="p-4 rounded-full bg-primary text-white my-8">
+      <div className="p-5 flex flex-col justify-center items-center md:text-left">
+        <div className="flex justify-start items-center gap-6 mb-8">
+          <div className="p-4 rounded-full bg-primary text-white">
             <PhoneCall size={30} />
           </div>
-          <div className="gap-4">
-            <p className="p-3">Phone</p>
+          <div>
+            <p className="font-bold">Phone</p>
             <p className="text-primary">+8801719308064</p>
           </div>
         </div>
 
         <div className="flex justify-start items-center gap-6">
-          <div className="p-4 rounded-full bg-primary text-white my-8">
+          <div className="p-4 rounded-full bg-primary text-white">
             <MapPin size={30} />
           </div>
-          <div className="gap-4">
-            <p className="p-3">Address</p>
+          <div>
+            <p className="font-bold">Address</p>
             <p className="text-primary">Satkhira, Khulna, Bangladesh</p>
           </div>
         </div>
