@@ -25,7 +25,8 @@ const ContactForm: React.FC = () => {
     try {
       const response = await axios.post(
         "https://portfolio-server-inky-six.vercel.app/api/v1/mail",
-        data
+        data,
+        { withCredentials: true }
       );
       toast.success("Email sent:", response.data);
     } catch (error) {

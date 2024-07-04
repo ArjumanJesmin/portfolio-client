@@ -1,13 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import GradientColor from "@/app/color/GradientColor";
-import { ArrowDown, Facebook, Github, Linkedin } from "lucide-react";
+import { Facebook, Github, Linkedin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import img from "@/app/asserts/arjuman.png";
-import { Divider } from "@nextui-org/react";
 
 const social = [
   {
