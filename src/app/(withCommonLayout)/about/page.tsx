@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { Card, CardBody, Button } from "@nextui-org/react";
 import Image from "next/image";
@@ -6,8 +7,8 @@ import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen bg-gray-100 py-10 px-4 flex items-center justify-center">
-      <Card className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+    <div className="min-h-screen bg-secondary py-10 px-4 flex items-center justify-center">
+      <Card className="max-w-4xl mx-auto p-6 rounded-lg shadow-lg">
         <CardBody>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="flex flex-col items-center justify-center">
@@ -46,18 +47,30 @@ const AboutPage = () => {
                 About Me
               </h3>
               <p className="text-gray-600 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                blandit arcu in lacus fermentum, at ultrices lacus eleifend.
-                Aenean nec risus nec urna sollicitudin facilisis. Nullam nec
-                justo neque.
+                Hello! I'm Arjuman Jesmin, a passionate Full-Stack Developer
+                with a strong foundation in both frontend and backend
+                technologies. I thrive on creating seamless and efficient web
+                applications that provide exceptional user experiences. My
+                expertise spans across a diverse set of tools and frameworks,
+                ensuring I can tackle a wide range of projects with precision
+                and creativity.
               </p>
               <p className="text-gray-600 mb-4">
-                Duis euismod justo sit amet arcu consequat, at dapibus metus
-                ullamcorper. Aliquam erat volutpat. Integer et magna in massa
-                vulputate tincidunt. Curabitur ac dui sit amet dolor pharetra
-                consequat.
+                <strong>Skills:</strong> <br />
+                <strong>Frontend:</strong> JavaScript, TypeScript, React, Redux,
+                Next.js <br />
+                <strong>Backend:</strong> MongoDB, Mongoose, PostgreSQL, Prisma,
+                GraphQL <br />
+                <strong>Databases:</strong> RDBMS, MongoDB
               </p>
-
+              <p className="text-gray-600 mb-4">
+                With a robust understanding of modern web development practices,
+                I am dedicated to delivering high-quality, scalable solutions.
+                My goal is to continually grow as a developer and to contribute
+                to innovative projects that make a difference. Feel free to
+                explore my portfolio to see some of the exciting projects I've
+                worked on. Let's connect and create something amazing together!
+              </p>
               <Link href="/contactUs" passHref>
                 <Button className="bg-customPurple text-white hover:bg-blue-600 mt-4">
                   Contact Me
